@@ -563,7 +563,18 @@ legend{
 
 #blog h2 {
     font-size: 70px;
+   
 }
+#blog{
+    backround-color: #555555;
+}
+
+#blog h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+
 
 #products p {
     font-size: 50px;
