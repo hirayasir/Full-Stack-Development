@@ -2,7 +2,7 @@
     // Enable strict mode globally  
     project/
 ├── index.html
-├── course.html
+├── product.html
 ├── contact.html
 ├── blog.html
 ├── styles.css
