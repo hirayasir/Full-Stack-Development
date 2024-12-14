@@ -536,12 +536,12 @@ section {
 }
 
 /* Specific styles for the Courses section */
-#courses {
+#products {
     margin-top: 0; /* No margin above */
 }
 
 /* Content container adjustments */
-.content-container, .courses-container {
+.content-container, .products-container {
     padding: 20px; /* Adjust padding as necessary */
 }
 
@@ -556,7 +556,7 @@ legend{
     font-size: 70px;
 }
 
-#courses h2 {
+#products h2 {
     font-size: 70px;
 }
 
@@ -565,6 +565,6 @@ legend{
     font-size: 70px;
 }
 
-#courses p {
+#products p {
     font-size: 50px;
 }
