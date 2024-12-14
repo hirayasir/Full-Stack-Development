@@ -1,0 +1,552 @@
+/*By Hira Yasir 2024*/
+/*fixed 1280 width*/
+body {
+    
+    margin: 0 auto; 
+    box-sizing: border-box;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;	
+}
+
+/* Overall Viewport */
+:root {
+    --light-gray: #eaeaea;
+    --med-gray: #555555;
+    --dark-gray: #222222;
+    --white: #ffffff;
+    --black: #000000;
+
+    --box-shadow: -5px 5px 5px var(--med-gray);
+    --hover-shadow: -3px 3px 6px var(--med-gray);
+
+    font-size: 16px;
+}
+
+
+/* Responsive Styles */
+@media screen and (min-width: 1280px) {
+
+
+
+body { 
+    color: #eaeaea; 
+    line-height: 1.35; 
+    font-family: "Lora", serif;
+    box-sizing: border-box; 
+    margin: 0; 
+}
+}
+/* Header and Footer Styles */
+header, footer {
+    width: 100%;
+    padding: 0; /* Remove padding to make it full-width */
+    margin: 0; /* Remove margin for full-width */
+   }
+
+h1 {
+    visibility: hidden;
+}
+#top h2 {
+  visibility:hidden;
+}
+
+.hero-content h2{
+    color: white;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333333;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px; 
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav h1 {
+    color: white; /* Heading color */
+    margin: 0; /* Remove margin */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    margin: 1px; /* Remove margin */
+    padding: 5px; /* Remove padding */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a,
+nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem; /* Set a uniform font size */
+}
+
+/* Dark Mode Toggle */
+#mode-change {
+    padding: 5px 10px; /* Add padding */
+    border: 2px solid white; /* Outline style */
+    background-color: transparent; /* Transparent background */
+    color: white; /* Text color */
+    cursor: pointer;
+  
+}
+
+/* CTA Button Styles */
+.cta-button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust margin if necessary */
+    display: inline-block;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #c74c2b; /* Darker shade on hover */
+}
+
+
+
+
+/* Section Styles */
+section {
+    text-align: left;
+    background-color: #fff;
+    padding: 60px 0;
+    margin: 20px 0;
+}
+
+section p {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Add vertical padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: white;
+}
+
+body.dark-mode nav {
+    background-color: #1a1a1a; /* Dark nav background */
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e; /* Dark section background */
+    color: white;
+}
+
+body.dark-mode section {
+    color:white;
+}
+
+/* Dark Mode Product List Styles */
+body.dark-mode .product-list {
+    background-color: #1e1e1e; /* Background for product list */
+    color: white;
+}
+
+body.dark-mode .product {
+    background-color: #222; /* Darker background for product card */
+    color: white;
+}
+
+body.dark-mode .product p {
+    color: white;
+}
+
+/* Dark Mode Cart Summary Styles */
+body.dark-mode .cart-summary {
+    background-color: #222; /* Dark background for cart summary */
+    color: white;
+}
+
+body.dark-mode .cart-summary p {
+    color: white;
+} 
+
+
+/* Light Mode Styles */
+body {
+    background-color: var(--light-gray); /* Light background */
+    color: white; 
+}
+
+.product-list {
+    background-color: #fff; /* Background for product list */
+    color: var(--dark-gray); /* Text color for products */
+}
+
+.product {
+    background-color: #fff; /* White background for product card */
+    color: var(--dark-gray); /* Dark text color for product details */
+}
+
+.cart-summary {
+    background-color: #fff; /* White background for cart summary */
+    color: var(--dark-gray); /* Dark text color for cart summary */
+}
+
+.product p,
+.cart-summary p {
+    color: var(--dark-gray); /* Text color in light mode */
+}
+/*Form Dark and light mode*/
+/* Dark Mode Styles for Contact Form */
+body.dark-mode label {
+    color: #333; /* Make the label text white */
+}
+
+
+/* Dark Mode Cart Summary Styles */
+body.dark-mode .cart-summary {
+    background-color: #222; /* Dark background for cart summary */
+    color: #f0f0f0; /* Light text color for cart summary */
+}
+
+body.dark-mode .cart-summary p {
+    color: #f0f0f0; /* White text color for cart summary details */
+}
+
+/* Light Mode Styles */
+body {
+    background-color: var(--light-gray); /* Light background */
+    color: var(--dark-gray); /* Dark text color */
+}
+
+.product-list {
+    background-color: #fff; /* Background for product list */
+    color: var(--dark-gray); /* Text color for products */
+}
+
+.product {
+    background-color: #fff; /* White background for product card */
+    color: var(--dark-gray); /* Dark text color for product details */
+}
+
+.cart-summary {
+    background-color: #fff; 
+    color: var(--dark-gray); 
+}
+
+.product p,
+.cart-summary p {
+    color: var(--dark-gray); 
+}
+/*Form Dark and light mode*/
+/* Dark Mode Styles for Contact Form */
+body.dark-mode label {
+    color: #333; 
+}
+
+body.dark-mode #about h2, body.dark-mode #courses h2, body.dark-mode #contact h2 {
+    color: white !important;
+}
+
+
+/* Form Styles */
+form {
+    font-family: "Roboto", serif;
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 25px; 
+    margin-top: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for form and heading */
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Form heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Labels and input fields */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 120px; /* Set height for textarea */
+    resize: vertical; 
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Star (for required fields) */
+.star {
+    color: red;
+    font-size: 1rem;
+}
+
+/* Fieldset and legend */
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    background-color: #007BFF; /* Button background color */
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Hero Section Styles */
+/*image source*/
+.hero {
+    margin-top: -80px; /* Assuming navbar height */
+    height: calc(100vh - 50px); /* Adjust based on navbar height */
+    background-image: url('https://blog.shi.com/wp-content/uploads/2021/02/education-technology-trends-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+}
+
+.hero-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ff6347; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Button hover color */
+}
+
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    margin-bottom: 30px;
+    padding: 20px; 
+    font-family: "Alice", serif;
+}
+
+.product {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    width: 150px; /* Width for product card */
+    margin: 10px; /* Margin around products */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Scale effect on hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product img {
+    width: 100px; /* Full width */
+    height:100px; /* Maintain aspect ratio */
+    object-fit: cover; /* Keep the aspect ratio while covering */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.product p {
+    font-size: 16px;
+    margin: 10px 0; /* Space around text */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cart-summary {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin: 0 auto; /* Center cart summary */
+    text-align: center; /* Center text */
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+#checkout {
+    background-color: red; /* Button background color */
+    color: white; /* Text color */
+    padding: 12px; /* Padding around text */
+    width: 100%; /* Full width */
+    font-size: 16px; /* Font size */
+    margin-top: 15px; /* Space above button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scaling */
+}
+
+#checkout:hover {
+    background-color: #E64A19; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+/*Additional*/
+/* Reset margins and padding for sections */
+section {
+    margin: 0;  /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+/* Specific styles for the About section */
+#about {
+    margin-bottom: 10px; /* Adjust if you want a little space below About */
+  line-height: 2.6;
+}
+
+/* Specific styles for the Courses section */
+#courses {
+    margin-top: 0; /* No margin above */
+}
+
+/* Content container adjustments */
+.content-container, .courses-container {
+    padding: 20px; /* Adjust padding as necessary */
+}
+
+
+/* Additional */
+legend{
+    color:#1a1a1a;
+}

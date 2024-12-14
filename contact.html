@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Academy - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contact Us</h1>
+    <!--Contact form section-->
+<section id="contact">
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="full-name">Full Name (first and last)<span class="star">&nbsp;*</span></label>
+            <input type="text" id="full-name" autocomplete="name" placeholder="Enter your full name">
+            <span class="error-message"></span>
+
+            <fieldset>
+                <legend>Preferred Contact Method?<span class="star">&nbsp;*</span></legend>
+                <input type="radio" id="phone" value="Phone" name="preference">
+                <label for="phone">Phone</label>
+
+                <input type="radio" id="email" value="Email" name="preference">
+                <label for="email">Email</label>
+            </fieldset>
+            <span class="error-message"></span>
+
+            <label for="phone-number">Phone Number<span class="star">&nbsp;*</span></label>
+            <input type="text" id="phone-number" autocomplete="tel" placeholder="Enter your phone number">
+            <span class="error-message"></span>
+
+            <label for="email-input">Email<span class="star">&nbsp;*</span></label>
+            <input type="text" id="email-input" autocomplete="email" placeholder="Enter your email address">
+            <span class="error-message"></span>
+
+            <label for="message">Comments<span class="star">&nbsp;*</span></label>
+            <textarea id="message" placeholder="Enter your comments here"></textarea>
+            <span class="error-message"></span>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div id="thank-you-message" style="display: none;"></div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Global Academy By Hira Yasir</p>
+    </footer>
+</body>
+</html>

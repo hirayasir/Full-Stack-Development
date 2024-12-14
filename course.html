@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Academy - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Our Courses</h1>
+    <!-- Courses Section -->
+<section id="courses">
+    <div class="courses-container">
+        <h2>Courses</h2>
+        <div class="product-list">
+            <!-- Course 1 -->
+            <article class="product" data-price="90.99">
+                <h3>Front-End<br>Developer</h3>
+                <figure>
+                    <img src="https://kodmek.com/wp-content/uploads/2021/01/front-end-developer-1600x900-1.jpg" alt="Front-End Developer Course">
+                    <figcaption>$90.99</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+
+            <!-- Course 2 -->
+            <article class="product" data-price="94.99">
+              <h3>Back-<br>End<br>Developer</h3>
+                <figure>
+                    <img src="https://cdn.open-pr.com/T/6/T606613062_g.jpg" alt="Back-End Developer">
+                  <figcaption>$94.99</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+
+            <!-- Course 3 -->
+            <article class="product" data-price="150">
+              <h3>Full-<br>Stack<br>Developer</h3>
+                <figure>
+                    <img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg" alt="Full-Stack Developer">
+                    <figcaption>$150.00</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+
+            <!-- Course 4 -->
+            <article class="product" data-price="120">
+              <h3>UI/<br>UX <br> Design</h3>
+                <figure>
+                    <img src="https://d33wubrfki0l68.cloudfront.net/198700da4d7de2a1dd9df5d045a02ad1e910c322/9c804/en/blog/uploads/tasks-and-responsibilities-of-ux-vs-ui-designers.jpg" alt="UI/UX Design">
+                    <figcaption>$120.00</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+
+            <!-- Course 5 -->
+            <article class="product" data-price="200">
+              <h3>Software<br>Engineer<br>ing</h3>
+                <figure>
+                    <img src="https://www.ksotl.com/hosted/images/17/654ba7a9f046938e1a886958de671e/maxresdefault.jpg" alt="Software Engineering">
+                    <figcaption>$200.00</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+
+            <!-- Course 6 -->
+            <article class="product" data-price="85">
+              <h3>Graphic<br> Motion<br> Designer</h3>
+                <figure>
+                    <img src="https://www.codeandpixels.net/blog/wp-content/uploads/2019/03/graphic-designers.jpg" alt="Graphic Designer">
+                    <figcaption>$85.00</figcaption>
+                </figure>
+                <button class="add-to-cart">Add to Cart</button> <!-- Moved button outside -->
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Cart Summary Section -->
+<div class="cart-summary">
+    <p>🛒</p>
+    <!--Cart emoji source from:https://emojis.wiki/shopping-cart/-->
+      <p>Subtotal: $<span id="subtotal">0.00</span></p>
+      <p>Tax (10%): $<span id="tax">0.00</span></p>
+      <p>Shipping: $<span id="shipping">0.00</span></p>
+      <p>Total: $<span id="total">0.00</span></p>
+      <button id="checkout">Checkout</button>
+  </div>
+
+    <footer>
+        <p>&copy; 2024 Global Academy By Hira Yasir</p>
+    </footer>
+</body>
+</html>
